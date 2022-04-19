@@ -1,4 +1,4 @@
-# coding=utf-8
+s# coding=utf-8
 # 私有方法： 在类内部可以访问， 在外部不可以调用
 # 私有方法： 在方法前加两个下划线 _ 来定义私有方法
 
@@ -10,6 +10,7 @@ class Account:
 	def __init__(self,owner,amount):
 		self.owner=owner  # this is an individual variable, and a public varibale
 		self.__amount=amount # this  is an individual variable, and a private variable
+	# define a private individual method
 	def __getinfo(self):
 		return "{0} money number:{1} rate:{2}".format(self.owner,
 		self.__amount,Account.__interst_rate) #private variable can be only use in the inside class
