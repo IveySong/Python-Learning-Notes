@@ -8,6 +8,7 @@ def sum(*numbers):
 
 print(sum(1,2,3))
 
+
 # ** is for dict
 def show_info(**info):
 	print('---show info---')
@@ -15,6 +16,8 @@ def show_info(**info):
 		print('{0}-{1}'.format(key,value))
 
 show_info(name='Tony',age=18,sex=True)
+
+
 
 # function using function
 def add(a,b):
@@ -26,10 +29,12 @@ def calc(opr):
 		return add
 	else:
 		return sub
+
 f1=calc('+')
 f2=calc('-')
 print("10+5={0}".format(f1(10,5)))
 print("10-5={0}".format(f2(10,5)))
+
 
 
 # filter function
@@ -51,7 +56,6 @@ def f3(x):
 data3=[1,2,3,4,5]
 mapf=map(f3,data3)
 mapf=list(mapf)
-
 
 
 
