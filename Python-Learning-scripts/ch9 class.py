@@ -29,7 +29,7 @@ class Dog:
 		self.name=name
 		self.age=age
 		self.sex=sex
-		# invidual function method
+	# invidual function method
 	def run(self):
 		print('{0} is runnning'.format(self.name))
 	def speak(self,sound):
