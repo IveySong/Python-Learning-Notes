@@ -23,14 +23,12 @@ class Mule(Horse,Donkey):  #father class, Horse and Donkey
 		super().__init__(name)   # here, call the father class, Horse and Donkey sequencly
 		self.age=age
 	def show_info(self):
-		return "Mule: {0}, {1} age old".format(self.name,self.age)
-
-
-
+		# the function inherited from the father class can be changed in the child class
+		return "Mule: {0}, {1} age old".format(self.name,self.age) 
 
 
 
 m=Mule('Lvluoli',2)
 m.run()  #here,call the father class Horse
 m.roll()  #here, call the fathe class Donkey
-print(m.show_info()) #here,call the father class Horse
+print(m.show_info()) 
