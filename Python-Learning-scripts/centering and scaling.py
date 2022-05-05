@@ -5,7 +5,7 @@ import copy
 import numpy as np
 import pandas as pd
 import os
-from s.impute import SimpleImputer 
+from sklearn.impute import SimpleImputer 
 
 
 mtcars=pd.read_csv('E:/MY_Github/Python-Learning-Notes/DataSet/mtcars.csv')
